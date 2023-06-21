@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
       <header className="header">
-        <a className="logo">
+        <a href="#home" className="logo">
           <img src={Signature} alt="my signature" className="signature-img" />
         </a>
         <nav className="navbar">
