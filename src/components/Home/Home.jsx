@@ -39,21 +39,31 @@ function Home() {
           world of books.
         </p>
         <div className="social-media">
-          <a href="https://twitter.com/shabina2503" target="_blank">
+          <a
+            href="https://twitter.com/shabina2503"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
           <a
             href="https://www.linkedin.com/in/shabina-siddiqui/"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
-          <a href="https://github.com/shabinasiddiqui" target="_blank">
+          <a
+            href="https://github.com/shabinasiddiqui"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <a
             href="https://www.instagram.com/shabina___siddiqui/"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
@@ -63,7 +73,7 @@ function Home() {
         </a>
       </div>
       <div className="home-img">
-        <img src={image} alt="" />
+        <img src={image} alt="My Image" />
       </div>
     </section>
   );

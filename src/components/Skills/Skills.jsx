@@ -16,27 +16,35 @@ function Skills() {
         </h1>
         <div className="skills-container">
           <div className="skills-item">
-            <a href="https://react.dev/learn" target="_blank">
-              <img src={reactjsLogo} alt="" />
+            <a href="https://react.dev/learn" target="_blank" rel="noreferrer">
+              <img src={reactjsLogo} alt="react logo" />
 
               <h2>ReactJS</h2>
             </a>
           </div>
           <div className="skills-item">
-            <a href="https://devdocs.io/javascript/" target="_blank">
-              <img src={jsLogo} alt="" />
+            <a
+              href="https://devdocs.io/javascript/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={jsLogo} alt="js logo" />
               <h2>JavaScript</h2>
             </a>
           </div>
           <div className="skills-item">
-            <a href="https://www.python.org/doc/" target="_blank">
-              <img src={pythonLogo} alt="" />
+            <a
+              href="https://www.python.org/doc/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={pythonLogo} alt="Python logo" />
               <h2>Python</h2>
             </a>
           </div>
           <div className="skills-item">
-            <a href="https://html.com/" target="_blank">
-              <img src={htmlLogo} alt="" />
+            <a href="https://html.com/" target="_blank" rel="noreferrer">
+              <img src={htmlLogo} alt="html logo" />
               <h2>HTML</h2>
             </a>
           </div>
@@ -44,14 +52,19 @@ function Skills() {
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS"
               target="_blank"
+              rel="noreferrer"
             >
-              <img src={cssLogo} alt="" />
+              <img src={cssLogo} alt="css logo" />
               <h2>CSS</h2>
             </a>
           </div>
           <div className="skills-item">
-            <a href="https://getbootstrap.com/" target="_blank">
-              <img src={bootstrapLogo} alt="" />
+            <a
+              href="https://getbootstrap.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={bootstrapLogo} alt="bootstrap logo" />
               <h2>Bootstrap</h2>
             </a>
           </div>
