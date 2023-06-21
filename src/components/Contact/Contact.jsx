@@ -44,8 +44,8 @@ function Contact() {
   const [emailSubject, setEmailSubject] = useState("");
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState("");
-  const [insertedContact, setInsertedContact] = useState(null);
+  // const [submitMessage, setSubmitMessage] = useState("");
+  // const [insertedContact, setInsertedContact] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -61,15 +61,15 @@ function Contact() {
         message,
       })
       .then((response) => {
-        setSubmitMessage(response.data.message);
+        // setSubmitMessage(response.data.message);
         setIsSubmitting(false);
 
         const contact = response.data.contact;
-        setInsertedContact(contact);
+        // setInsertedContact(contact);
       })
       .catch((error) => {
         console.error(error);
-        setSubmitMessage("An error occurred while submitting the form.");
+        // setSubmitMessage("An error occurred while submitting the form.");
         setIsSubmitting(false);
       });
   };

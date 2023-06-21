@@ -68,12 +68,12 @@ function Home() {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
-        <a href="#" className="btn" onClick={handleDownload}>
+        <a className="btn" onClick={handleDownload}>
           Download Resume
         </a>
       </div>
       <div className="home-img">
-        <img src={image} alt="My Image" />
+        <img src={image} alt="home" />
       </div>
     </section>
   );
