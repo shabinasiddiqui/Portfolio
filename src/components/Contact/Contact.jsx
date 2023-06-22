@@ -143,7 +143,7 @@ function Contact() {
           ></textarea>
           <input type="submit" value="Send Message" className="btn" />
         </form> */}
-        <form method="post" name="Contact Form">
+        <form method="post" name="Contact Form" netlify>
           <p>
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" />
