@@ -103,7 +103,12 @@ return (
       <h2 className="heading">
         Reach out to <span>Me!</span>
       </h2>
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        action="https://clever-cranachan-2592c4.netlify.app/contact"
+      >
         <input type="hidden" name="form-name" value="contact" />
         <div className="input-box">
           <input type="text" name="fullName" placeholder="Full Name" required />
