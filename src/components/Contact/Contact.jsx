@@ -146,7 +146,7 @@ function Contact() {
             placeholder="Your Message"
             required
           ></textarea>
-          <input type="submit" value="Send Message" className="btn" />
+          <input type="submit" className="btn" />
         </form>
       </section>
     </>
