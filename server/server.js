@@ -75,14 +75,14 @@
 //   });
 // });
 
-const express = require("express");
-const cors = require("cors");
+// const express = require("express");
+// const cors = require("cors");
 
-const app = express();
-app.use(express.json());
-app.use(cors());
-const port = 3001;
+// const app = express();
+// app.use(express.json());
+// app.use(cors());
+// const port = 3001;
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Server is running on http://localhost:${port}`);
+// });
