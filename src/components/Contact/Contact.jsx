@@ -108,7 +108,7 @@ function Contact() {
           name="contact"
           method="POST"
           data-netlify="true"
-          action="https://clever-cranachan-2592c4.netlify.app/contact"
+          action="/pages/success"
         >
           <input type="hidden" name="form-name" value="contact" />
           <div className="input-box">
