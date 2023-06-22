@@ -104,12 +104,7 @@ function Contact() {
         <h2 className="heading">
           Reach out to <span>Me!</span>
         </h2>
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          action="/pages/success"
-        >
+        <form name="contact" method="POST" netlify>
           <input type="hidden" name="form-name" value="contact" />
           <div className="input-box">
             <input
