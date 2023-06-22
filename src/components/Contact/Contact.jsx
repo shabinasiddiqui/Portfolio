@@ -97,75 +97,48 @@
 import React from "react";
 import "./Contact.css";
 
-function Contact() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => navigate("/thank-you/"))
-      .catch((error) => alert(error));
-  };
-
-  return (
-    <>
-      <section className="contact" id="contact">
-        <h2 className="heading">
-          Reach out to <span>Me!</span>
-        </h2>
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          onSubmit={handleSubmit}
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <div className="input-box">
-            <input
-              type="text"
-              name="fullName"
-              placeholder="Full Name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-          </div>
-          <div className="input-box">
-            <input
-              type="number"
-              name="mobileNumber"
-              placeholder="Mobile Number"
-              required
-            />
-            <input
-              type="text"
-              name="emailSubject"
-              placeholder="Email Subject"
-              required
-            />
-          </div>
-          <textarea
-            name="message"
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
+return (
+  <>
+    <section className="contact" id="contact">
+      <h2 className="heading">
+        Reach out to <span>Me!</span>
+      </h2>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <div className="input-box">
+          <input type="text" name="fullName" placeholder="Full Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
             required
-          ></textarea>
-          <input type="submit" value="Send Message" className="btn" />
-        </form>
-      </section>
-    </>
-  );
-}
+          />
+        </div>
+        <div className="input-box">
+          <input
+            type="number"
+            name="mobileNumber"
+            placeholder="Mobile Number"
+            required
+          />
+          <input
+            type="text"
+            name="emailSubject"
+            placeholder="Email Subject"
+            required
+          />
+        </div>
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <input type="submit" value="Send Message" className="btn" />
+      </form>
+    </section>
+  </>
+);
 
 export default Contact;
