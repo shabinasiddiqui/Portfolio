@@ -98,13 +98,33 @@ import React from "react";
 import "./Contact.css";
 
 function Contact() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate("/thank-you/"))
+      .catch((error) => alert(error));
+  };
+
   return (
     <>
       <section className="contact" id="contact">
         <h2 className="heading">
           Reach out to <span>Me!</span>
         </h2>
-        <form name="contact" method="POST" data-netlify="true">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          onSubmit={handleSubmit}
+        >
           <input type="hidden" name="form-name" value="contact" />
           <div className="input-box">
             <input
