@@ -44,3 +44,11 @@
   margin-top: 2rem;
   cursor: pointer;
 }
+.success-message {
+  text-align: center;
+  color: var(--secondary-color);
+  display: none;
+}
+.display-success-message {
+  display: block;
+}
